@@ -9,7 +9,7 @@ node /^vm[0-9]+\.linux\.com$/ {
         content => "Hello, puppet master!\n",
     }
 
-    #include sys_info
+    include sys_info
     #include vim_upgrade
     #include sshd
 }
