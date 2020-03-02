@@ -4,6 +4,7 @@ node 'default' {
 }
 
 node /^vm[0-9]+\.linux\.com$/ {
+    include sys_info
     file {'/tmp/HelloPuppetMaster':
         content => "Hello, puppet master!\n",
     }
